@@ -11,7 +11,10 @@ echo "The Numbers Are $a $b $c"
 p=$(( a+(b*c) ))
 q=$(( (a*b)+c ))
 r=$(( c+(a/b) ))
+s=$(( a%(b/c) ))
+
 
 echo "The Result is" $p
 echo "The Result is" $q
 echo "The Result is" $r
+echo "The Result is "$s
