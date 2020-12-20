@@ -26,5 +26,10 @@ res[1]=$q
 res[2]=$r
 res[3]=$s
 
-echo "Index Numbers : ${!res[@]}"
-echo "Index Numbers : ${res[@]}"
+array[((count++))]=${res[1]}
+array[((count++))]=${res[2]}
+array[((count++))]=${res[3]}
+array[((count++))]=${res[4]}
+echo -ne "\n Index Numbers : ${!array[@]}"
+
+echo -ne "\n Index Numbers : ${array[@]}"
